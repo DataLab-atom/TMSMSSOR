@@ -69,3 +69,7 @@ url = {https://computmath.cjoe.ac.cn/szjs/CN/10.12288/szjs.s2022-0868},
 doi = {10.12288/szjs.s2022-0868},
 }
 ```
+
+# 其它
+如果还有其它问题可以提交issue，也可以通过我的个人邮箱`wen_hai_bin@163.com`跟我联系。
+
