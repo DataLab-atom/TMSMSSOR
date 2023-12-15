@@ -15,10 +15,10 @@ out:
   Build cuda_11.7.r11.7/compiler.31442593_0
 
 nvc++ -V
-out:
-nvc++ 22.7-0 64-bit target on x86-64 Linux -tp haswell
-NVIDIA Compilers and Tools
-Copyright (c) 2022, NVIDIA CORPORATION & AFFILIATES.  All rights reserved.
+  out:
+  nvc++ 22.7-0 64-bit target on x86-64 Linux -tp haswell
+  NVIDIA Compilers and Tools
+  Copyright (c) 2022, NVIDIA CORPORATION & AFFILIATES.  All rights reserved.
 
 ```
 
