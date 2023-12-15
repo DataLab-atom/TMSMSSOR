@@ -27,6 +27,12 @@ m    //实际运算时方阵A的行数以及列数为 m*m
 runAlgorithmTag // 请在 1 和 2 中间选择 分别对应 mcm 以及 mcm plus
 gpu_id //当你拥有多块gpu时可以通过此项设置，选择使用哪一块gpu, 如果只有一块gpu 请将此项置为0
 ```
+
+### 自行编译指令示例
+```
+clear & nvc -o main_acc -acc main_acc.c -Minfo
+```
+
 # 如果你觉得这对你的工作有帮助，请引用我们的论文
 ```
 @article{郑华:350,
