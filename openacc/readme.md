@@ -3,16 +3,29 @@
 
 # 实验
 ## 编译运行-环境搭建
-请在确保你准备好了linux下的openacc运行环境nvidiahpc库以及nvidia运行时库(nvidiatoolkit)。在确保环境准备就绪得到情况下你可以直接通过```sh run.sh``` 获取分析所需数据。此外我们还准备了一份不是很完备的分析代码详情请参考`plot.ipynb`,以及可以自行通过nvc++编译`main_acc.c`来实现一些个性化的设置
+请在确保你准备好了linux下的openacc运行环境nvidiahpc库以及nvidia运行时库(nvidiatoolkit)。
 
+## 更直接的方式
+在确保环境准备就绪得到情况下你可以直接通过```sh run.sh``` 获取分析所需数据。
+此外我们还准备了一份不是很完备的分析代码详情请参考`plot.ipynb`。
 
+## 更个性化的方式
+可以自行通过nvc++编译`main_acc.c`来实现一些个性化的设置
 
-参数列表：
+### 单独运行实例
 ```
-numworkers  
-m 
+// .MCMPLUS
+cd openacc
+numworkers = 16
+m = 256
+runAlgorithmTag = 2
+gpu_id = 0
+./main_acc $numworkers $m $runAlgorithmTag $gpu_id
+//参数列表明细：
+numworkers  //使用的线程数
+m    //实际运算时方阵A的行数以及列数为 m*m
 runAlgorithmTag // 请在 1 和 2 中间选择 分别对应 mcm 以及 mcm plus
-gpu_id //当你拥有多块gpu时可以通过此项设置，选择使用哪一块gpu 如果只有一块gpu 请将此项置为0
+gpu_id //当你拥有多块gpu时可以通过此项设置，选择使用哪一块gpu, 如果只有一块gpu 请将此项置为0
 ```
 # 如果你觉得这对你的工作有帮助，请引用我们的论文
 ```
