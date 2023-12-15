@@ -9,7 +9,7 @@
 ```
 numworkers  
 m 
-runAlgorithmTag // 请在 1 和 2 中间选择 分别对应 $$mcm$$ 以及 $$mcm_2$$
+runAlgorithmTag // 请在 1 和 2 中间选择 分别对应 mcm 以及 mcm_2
 gpu_id //当你拥有多块gpu时可以通过此项设置，选择使用哪一块gpu
 ```
 # 如果你觉得这对你的工作有帮助，请引用我们的论文
