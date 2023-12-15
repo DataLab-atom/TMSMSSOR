@@ -3,7 +3,7 @@
 
 # 实验
 ## 编译运行-环境搭建
-###这里是openmp的版本 还有一份openacc的版本详情请参考`openacc`
+### 这里是openmp的版本 还有一份openacc的版本详情请参考`openacc`
 
 
 Linlux 下使用详情请参见`帮助文档.docx`。
