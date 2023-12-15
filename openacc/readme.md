@@ -6,8 +6,12 @@
 请在确保你准备好了linux下的openacc运行环境nvidiahpc库以及nvidia运行时库(nvidiatoolkit)。在确保环境准备就绪得到情况下你可以直接通过```sh run.sh``` 获取分析所需数据。此外我们还准备了一份不是很完备的分析代码详情请参考`plot.ipynb`,以及可以自行通过nvc++编译`main_acc.c`来实现一些个性化的设置
 
 参数列表：
-
-
+```
+numworkers  
+m 
+runAlgorithmTag // 请在 1 和 2 中间选择 分别对应 mcm 以及 $mcm_2$
+gpu_id //当你拥有多块gpu时可以通过此项设置，选择使用哪一块gpu
+```
 # 如果你觉得这对你的工作有帮助，请引用我们的论文
 ```
 @article{郑华:350,
