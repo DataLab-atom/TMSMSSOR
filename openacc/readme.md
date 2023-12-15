@@ -4,6 +4,23 @@
 # 实验
 ## 编译运行-环境搭建
 请在确保你准备好了linux下的openacc运行环境nvidiahpc库以及nvidia运行时库(nvidiatoolkit)。
+原编译环境如下
+```
+nvcc -V
+out:
+  nvcc: NVIDIA (R) Cuda compiler driver
+  Copyright (c) 2005-2022 NVIDIA Corporation
+  Built on Wed_Jun__8_16:49:14_PDT_2022
+  Cuda compilation tools, release 11.7, V11.7.99
+  Build cuda_11.7.r11.7/compiler.31442593_0
+
+nvc++ -V
+out:
+nvc++ 22.7-0 64-bit target on x86-64 Linux -tp haswell
+NVIDIA Compilers and Tools
+Copyright (c) 2022, NVIDIA CORPORATION & AFFILIATES.  All rights reserved.
+
+```
 
 ## 更直接的方式
 在确保环境准备就绪得到情况下你可以直接通过```sh run.sh``` 获取分析所需数据。
