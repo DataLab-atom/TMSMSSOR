@@ -27,8 +27,6 @@ nvc++ -V
 此外我们还准备了一份不是很完备的分析代码详情请参考`plot.ipynb`。
 
 ## 更个性化的方式
-可以自行通过nvc++编译`main_acc.c`来实现一些个性化的设置
-
 ### 单独运行实例
 ```
 // .MCMPLUS
@@ -45,6 +43,7 @@ runAlgorithmTag // 请在 1 和 2 中间选择 分别对应 mcm 以及 mcm plus
 gpu_id //当你拥有多块gpu时可以通过此项设置，选择使用哪一块gpu, 如果只有一块gpu 请将此项置为0
 ```
 
+也可以自行通过nvc++编译`main_acc.c`来实现一些个性化的设置。
 ### 自行编译指令示例
 ```
 clear & nvc -o main_acc -acc main_acc.c -Minfo
